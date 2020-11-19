@@ -20,6 +20,53 @@
 
    ** Xcode > Preference > Location > Command Line Tools : Xcode 10.2.1(10E1001)으로 설정!!
 
-<img src="/Users/sunhapark/Library/Application Support/typora-user-images/image-20201116225342293.png" alt="image-20201116225342293" style="zoom: 25%;" />
+<img src="/Users/sunhapark/Library/Application Support/typora-user-images/image-20201119231543514.png" alt="image-20201119231543514" style="zoom: 25%;" />
+
+<img src="/Users/sunhapark/Library/Application Support/typora-user-images/image-20201119231659535.png" alt="image-20201119231659535" style="zoom:25%;" />
 
 <img src="/Users/sunhapark/Library/Application Support/typora-user-images/image-20201116225433646.png" alt="image-20201116225433646" style="zoom:25%;" />
+
+!! ERROR
+
+ Xcode 빌드 에러 - 'React/RCTBridgeDelegate.h' file not found
+
+	> 프로젝트 폴더 > ios 폴더 > 
+	>
+	> ```
+	> pod install
+	> ```
+	>
+	> 
+
+3. Hello World! 
+
+   App.js 파일 수정
+
+   ```
+   import React from 'react';
+   import {SafeAreaView, StyleSheet, Text} from 'react-native';
+   
+   const App = () => {
+     return (
+       <SafeAreaView style={styles.container}>
+         <Text>Hello World</Text>
+       </SafeAreaView>
+     );
+   };
+   
+   const styles = StyleSheet.create({
+     container: {
+       flex: 1,
+       backgroundColor: '#fff',
+       alignItems: 'center',
+       justifyContent: 'center',
+     },
+   });
+   
+   export default App;
+   ```
+
+   <img src="/Users/sunhapark/Library/Application Support/typora-user-images/image-20201120000347982.png" alt="image-20201120000347982" style="zoom:25%;" />
+
+   (참고) https://jeffgukang.github.io/react-native-tutorial/docs/basic-tutorial/basic-features(todolist)/01-getting-started/getting-started-kr.html
+
